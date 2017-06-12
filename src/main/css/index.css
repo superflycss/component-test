@@ -1,0 +1,78 @@
+/** @define Test */
+/*! superfly-css-component-test | MIT License | https://github.com/superfly-css/superfly-css-component-test/blob/master/LICENSE.md */
+
+@import "@superflycss/utilities-fonts";
+@import "@superflycss/utilities-layout";
+
+.Test {
+   @apply(--u-flex);
+   @apply(--u-flex-column);
+   @apply(--u-width-100);
+   @apply(--u-position-relative);
+}
+
+.Test_when {
+   @apply(--u-font-size-800);
+   @apply(--u-font-weight-500);
+}
+
+.Test_then {
+   @apply(--u-font-size-800);
+   @apply(--u-font-weight-500);
+}
+
+.Test_input {
+   @apply(--u-flex);
+   @apply(--u-flex-column);
+   @apply(--u-width-30x);
+}
+
+.Test_output {
+   @apply(--u-flex);
+   @apply(--u-flex-column);
+   @apply(--u-width-30x);
+}
+
+.Test_when::before {
+  content: 'When';
+}
+
+.Test_then::before {
+  content: 'Then';
+}
+
+.Test_container {
+    @apply(--u-flex);
+    @apply(--u-flex-column);
+    @apply(--u-flex-align-items-center);
+    @apply(--u-width-100);
+    @apply(--u-padding-top-1x);
+    @apply(--u-margin-top-6x);
+}
+
+.Test_component {
+    @apply(--u-top-left);
+    @apply(--u-font-size-800);
+    @apply(--u-zindex-modal);
+    @apply(--u-margin-top-1x);
+    @apply(--u-margin-left-14x);
+}
+
+.Test_component::before {
+  content: "⋐\00a0";
+}
+
+.Test_counter {
+    @apply(--u-top-left);
+    @apply(--u-margin-top-1x);
+    @apply(--u-margin-left-2x);
+    @apply(--u-zindex-modal);
+    @apply(--u-font-weight-500);
+    @apply(--u-font-size-800);
+    @apply(--u-margin-left-2x);
+}
+
+.Test_counter::before {
+  content: "∡\00a0" counter(test-counter);
+  counter-increment: test-counter;
+}
