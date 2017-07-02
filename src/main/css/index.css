@@ -10,6 +10,7 @@
   --Test-text-color: inherit;
   --Test_description-margin-bottom: 1rem;
   --Test_render-margin-bottom: 2rem;
+  --Test_em-text-color: inherited;  
   --Test_separator-height: 2rem;
   --Test_separator-margin-bottom: 0rem;
   --Test_separator-margin-top: 0rem;
@@ -49,6 +50,10 @@
 
 .Test_render {
   margin-bottom: var(--Test_render-margin-bottom);
+}
+
+.Test_em {
+  color: var(--Test_em-text-color);
 }
 
 .Test_separator {
