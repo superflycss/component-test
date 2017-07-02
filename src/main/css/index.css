@@ -20,9 +20,10 @@
   --Test_component-text-color: inherit;
   --Test_input-width: 40rem;
   --Test_input-margin-left: 2rem;
-  --Test_input-margin-right: 5rem;
+  --Test_input-margin-right: 3rem;
   --Test_input-overflow: auto;
   --Test_output-overflow: auto;
+  --Test_output-margin-left: 2rem;
   --Test_utilities-text-color: inherit;
   --Test_counter-text-color: inherit;
 }
@@ -76,6 +77,7 @@
   @apply(--u-flex);
   @apply(--u-flex-column);
   @apply(--u-width-30rem);
+  margin-left: var(--Test_output-margin-left);
   overflow: var(--Test_output-overflow);
   overflow-y: hidden;
 }
