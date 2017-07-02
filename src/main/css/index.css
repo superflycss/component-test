@@ -18,6 +18,7 @@
   --Test_container-text-color: inherit;
   --Test_component-text-color: inherit;
   --Test_input-width: 40rem;
+  --Test_input-margin-right: 5rem;
   --Test_input-overflow: auto;
   --Test_output-overflow: auto;
   --Test_utilities-text-color: inherit;
@@ -60,6 +61,7 @@
   @apply(--u-flex-column);
   width: var(--Test_input-width);
   overflow: var(--Test_input-overflow);
+  margin-right: var(--Test_input-margin-right);
   overflow-y: hidden;
 }
 
