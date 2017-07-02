@@ -15,10 +15,11 @@
   --Test_then-background-color: inherit;
   --Test_then-text-color: inherit;
   --Test_container-background-color: inherit;
-  --Test_container-margin-left: 2rem;
+  --Test_container-margin-left: 0rem;
   --Test_container-text-color: inherit;
   --Test_component-text-color: inherit;
   --Test_input-width: 40rem;
+  --Test_input-margin-left: 2rem;
   --Test_input-margin-right: 5rem;
   --Test_input-overflow: auto;
   --Test_output-overflow: auto;
@@ -67,6 +68,7 @@
   width: var(--Test_input-width);
   overflow: var(--Test_input-overflow);
   margin-right: var(--Test_input-margin-right);
+  margin-left: var(--Test_input-margin-left);
   overflow-y: hidden;
 }
 
