@@ -4,6 +4,7 @@
 
 @import "@superflycss/variables-fonts";
 @import "@superflycss/variables-layout";
+
 :root {
   --Test-background-color: inherit;
   --Test-text-color: inherit;
