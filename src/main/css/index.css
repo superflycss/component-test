@@ -119,11 +119,10 @@
   @apply(--u-font-weight-500);
   @apply(--u-font-size-800);
   @apply(--u-margin-left-2rem);
-  color: var(Test_counter-text-color);
+  color: var(--Test_counter-text-color);
 }
 
 .Test_counter::before {
   content: "∡\00a0" counter(test-counter);
   counter-increment: test-counter;
-  color: var(--Test_counter-text-color);
 }
