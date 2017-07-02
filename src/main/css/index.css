@@ -115,7 +115,6 @@
   @apply(--u-flex-align-items-start);
   @apply(--u-width-100);
   @apply(--u-padding-top-1rem);
-  @apply(--u-margin-top-6rem);
   margin-left: var(--Test_container-margin-left);
   color: var(--Test_container-text-color);
   background-color: var(--Test_container-background-color);
