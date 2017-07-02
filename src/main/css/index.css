@@ -14,12 +14,14 @@
   --Test_then-background-color: inherit;
   --Test_then-text-color: inherit;
   --Test_container-background-color: inherit;
+  --Test_container-margin-left: 2rem;
   --Test_container-text-color: inherit;
   --Test_component-text-color: inherit;
   --Test_input-width: 40rem;
   --Test_input-overflow: auto;
   --Test_output-overflow: auto;
   --Test_utilities-text-color: inherit;
+  --Test_counter-text-color: inherit;
 }
 
 .Test {
@@ -76,6 +78,7 @@
   @apply(--u-width-100);
   @apply(--u-padding-top-1rem);
   @apply(--u-margin-top-6rem);
+  margin-left: var(--Test_container-margin-left);
   color: var(--Test_container-text-color);
   background-color: var(--Test_container-background-color);
 }
@@ -114,6 +117,7 @@
   @apply(--u-font-weight-500);
   @apply(--u-font-size-800);
   @apply(--u-margin-left-2rem);
+  color: var(Test_counter-text-color);
 }
 
 .Test_counter::before {
