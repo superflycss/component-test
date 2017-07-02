@@ -10,6 +10,14 @@
   --Test-text-color: inherit;
   --Test_description-margin-bottom: 1rem;
   --Test_render-margin-bottom: 2rem;
+  --Test_separator-height: 2rem;
+  --Test_separator-margin-bottom: 0rem;
+  --Test_separator-margin-top: 0rem;
+  --Test_separator-border-color: inherit;
+  --Test_separator-border-style: solid;
+  --Test_separator-border-top: 0.5rem;
+  --Test_separator-border-bottom: 0.5rem;
+  --Test_separator-background-color: inherit;
   --Test_when-background-color: inherit;
   --Test_when-text-color: inherit;
   --Test_then-background-color: inherit;
@@ -41,6 +49,19 @@
 
 .Test_render {
   margin-bottom: var(--Test_render-margin-bottom);
+}
+
+.Test_separator {
+  height: var(--Test_separator-height);
+  background-color: var(--Test_separator-background-color);
+  z-index: 100000;
+  width: 100%;
+  border-top: var(--Test_separator-border-top);
+  border-bottom: var(--Test_separator-border-bottom);
+  border-style: var(--Test_separator-border-style);
+  border-color: var(--Test_separator-border-color);
+  margin-top: var(--Test_separator-margin-top);
+  margin-bottom: var(--Test_separator-margin-bottom);
 }
 
 .Test_description {
