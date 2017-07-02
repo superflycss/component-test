@@ -125,4 +125,5 @@
 .Test_counter::before {
   content: "∡\00a0" counter(test-counter);
   counter-increment: test-counter;
+  color: var(--Test_counter-text-color);
 }
