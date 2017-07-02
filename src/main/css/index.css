@@ -81,7 +81,7 @@
 .Test_container {
   @apply(--u-flex);
   @apply(--u-flex-column);
-  @apply(--u-flex-align-items-center);
+  @apply(--u-flex-align-items-start);
   @apply(--u-width-100);
   @apply(--u-padding-top-1rem);
   @apply(--u-margin-top-6rem);
