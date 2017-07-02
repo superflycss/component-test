@@ -1,9 +1,10 @@
 /** @define Test */
+
+
 /*! superflycss/component-test | MIT License | https://github.com/superflycss/component-test/blob/master/LICENSE.md */
 
 @import "@superflycss/variables-fonts";
 @import "@superflycss/variables-layout";
-
 :root {
   --Test-background-color: inherit;
   --Test-text-color: inherit;
@@ -11,41 +12,35 @@
   --Test_when-text-color: inherit;
   --Test_then-background-color: inherit;
   --Test_then-text-color: inherit;
+  --Test_then-background-color: inherit;
+  --Test_then-text-color: inherit;
+  --Test_container-background-color: inherit;
+  --Test_container-text-color: inherit;
+  --Test_component-text-color: inherit;
+  --Test_utilities-text-color: inherit;
 }
 
 .Test {
-   @apply(--u-flex);
-   @apply(--u-flex-column);
-   @apply(--u-width-100);
-   @apply(--u-position-relative);
-   color: var(--Test-text-color);
-   background-color: var(--Test-background-color);
+  @apply(--u-flex);
+  @apply(--u-flex-column);
+  @apply(--u-width-100);
+  @apply(--u-position-relative);
+  color: var(--Test-text-color);
+  background-color: var(--Test-background-color);
 }
 
 .Test_when {
-   @apply(--u-font-size-800);
-   @apply(--u-font-weight-500);
-   color: var(--Test_when-text-color);
-   background-color: var(--Test_when-background-color);
+  @apply(--u-font-size-800);
+  @apply(--u-font-weight-500);
+  color: var(--Test_when-text-color);
+  background-color: var(--Test_when-background-color);
 }
 
 .Test_then {
-   @apply(--u-font-size-800);
-   @apply(--u-font-weight-500);
-   color: var(--Test_then-text-color);
-   background-color: var(--Test_then-background-color);
-}
-
-.Test_input {
-   @apply(--u-flex);
-   @apply(--u-flex-column);
-   @apply(--u-width-30rem);
-}
-
-.Test_output {
-   @apply(--u-flex);
-   @apply(--u-flex-column);
-   @apply(--u-width-30rem);
+  @apply(--u-font-size-800);
+  @apply(--u-font-weight-500);
+  color: var(--Test_then-text-color);
+  background-color: var(--Test_then-background-color);
 }
 
 .Test_when::before {
@@ -56,21 +51,36 @@
   content: 'Then';
 }
 
+.Test_input {
+  @apply(--u-flex);
+  @apply(--u-flex-column);
+  @apply(--u-width-30rem);
+}
+
+.Test_output {
+  @apply(--u-flex);
+  @apply(--u-flex-column);
+  @apply(--u-width-30rem);
+}
+
 .Test_container {
-    @apply(--u-flex);
-    @apply(--u-flex-column);
-    @apply(--u-flex-align-items-center);
-    @apply(--u-width-100);
-    @apply(--u-padding-top-1rem);
-    @apply(--u-margin-top-6rem);
+  @apply(--u-flex);
+  @apply(--u-flex-column);
+  @apply(--u-flex-align-items-center);
+  @apply(--u-width-100);
+  @apply(--u-padding-top-1rem);
+  @apply(--u-margin-top-6rem);
+  color: var(--Test_container-text-color);
+  background-color: var(--Test_container-background-color);
 }
 
 .Test_component {
-    @apply(--u-top-left);
-    @apply(--u-font-size-800);
-    @apply(--u-zindex-modal);
-    @apply(--u-margin-top-1rem);
-    @apply(--u-margin-left-14rem);
+  @apply(--u-top-left);
+  @apply(--u-font-size-800);
+  @apply(--u-zindex-modal);
+  @apply(--u-margin-top-1rem);
+  @apply(--u-margin-left-14rem);
+  color: var(--Test_component-text-color);
 }
 
 .Test_component::before {
@@ -78,11 +88,12 @@
 }
 
 .Test_utilities {
-    @apply(--u-top-left);
-    @apply(--u-font-size-800);
-    @apply(--u-zindex-modal);
-    @apply(--u-margin-top-1rem);
-    @apply(--u-margin-left-14rem);
+  @apply(--u-top-left);
+  @apply(--u-font-size-800);
+  @apply(--u-zindex-modal);
+  @apply(--u-margin-top-1rem);
+  @apply(--u-margin-left-14rem);
+  color: var(--Test_utilities-text-color);
 }
 
 .Test_utilities::before {
@@ -90,13 +101,13 @@
 }
 
 .Test_counter {
-    @apply(--u-top-left);
-    @apply(--u-margin-top-1rem);
-    @apply(--u-margin-left-2rem);
-    @apply(--u-zindex-modal);
-    @apply(--u-font-weight-500);
-    @apply(--u-font-size-800);
-    @apply(--u-margin-left-2rem);
+  @apply(--u-top-left);
+  @apply(--u-margin-top-1rem);
+  @apply(--u-margin-left-2rem);
+  @apply(--u-zindex-modal);
+  @apply(--u-font-weight-500);
+  @apply(--u-font-size-800);
+  @apply(--u-margin-left-2rem);
 }
 
 .Test_counter::before {
