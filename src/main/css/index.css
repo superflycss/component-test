@@ -7,6 +7,7 @@
 :root {
   --Test-background-color: inherit;
   --Test-text-color: inherit;
+  --Test_description-margin-bottom: 1rem;
   --Test_when-background-color: inherit;
   --Test_when-text-color: inherit;
   --Test_then-background-color: inherit;
@@ -32,6 +33,10 @@
   @apply(--u-position-relative);
   color: var(--Test-text-color);
   background-color: var(--Test-background-color);
+}
+
+.Test_description {
+  margin-bottom: var(--Test_description-margin-bottom);
 }
 
 .Test_when {
