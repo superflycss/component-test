@@ -55,7 +55,7 @@
   @apply(--u-flex);
   @apply(--u-width-100);
   @apply(--u-position-relative);
-  height: var(--Header_test-height);
+  height: var(--Test_header-height);
   color: var(--Test_header-text-color);
   background-color: var(--Test_header-background-color);
 }
