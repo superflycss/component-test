@@ -10,6 +10,7 @@
   --Test-text-color: inherit;
   --Test_header-background-color: inherit;
   --Test_header-text-color: inherit;
+  --Test_header-height: inherit;
   --Test_description-margin-bottom: 1rem;
   --Test_render-margin-bottom: 2rem;
   --Test_em-text-color: inherited;
@@ -54,6 +55,7 @@
   @apply(--u-flex);
   @apply(--u-width-100);
   @apply(--u-position-relative);
+  height: var(--Header_test-height);
   color: var(--Test_header-text-color);
   background-color: var(--Test_header-background-color);
 }
