@@ -54,7 +54,7 @@
 }
 
 .Test_code {
-  color(--Test_code-text-color);
+  color: var(--Test_code-text-color);
 }
 
 .Test_header {
