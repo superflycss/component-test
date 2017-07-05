@@ -8,6 +8,8 @@
 :root {
   --Test-background-color: inherit;
   --Test-text-color: inherit;
+  --Test_header-background-color: inherit;
+  --Test_header-text-color: inherit;
   --Test_description-margin-bottom: 1rem;
   --Test_render-margin-bottom: 2rem;
   --Test_em-text-color: inherited;
@@ -46,6 +48,14 @@
   @apply(--u-position-relative);
   color: var(--Test-text-color);
   background-color: var(--Test-background-color);
+}
+
+.Test_header {
+  @apply(--u-flex);
+  @apply(--u-width-100);
+  @apply(--u-position-relative);
+  color: var(--Test_header-text-color);
+  background-color: var(--Test_header-background-color);
 }
 
 .Test_render {
