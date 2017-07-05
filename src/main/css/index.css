@@ -30,6 +30,7 @@
   --Test_then-text-color: inherit;
   --Test_container-background-color: inherit;
   --Test_container-margin-left: 0rem;
+  --Test_container-margin-top: 2rem;
   --Test_container-text-color: inherit;
   --Test_component-text-color: inherit;
   --Test_input-min-width: 45rem;
@@ -132,6 +133,7 @@
   @apply(--u-width-100);
   @apply(--u-padding-top-1rem);
   margin-left: var(--Test_container-margin-left);
+  margin-top: var(--Test_container-margin-top);
   color: var(--Test_container-text-color);
   background-color: var(--Test_container-background-color);
 }
