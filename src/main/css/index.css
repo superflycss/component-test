@@ -41,6 +41,7 @@
   --Test_output-margin-left: 2rem;
   --Test_utilities-text-color: inherit;
   --Test_counter-text-color: inherit;
+  --Test_code-text-color: inherit;
 }
 
 .Test {
@@ -50,6 +51,10 @@
   @apply(--u-position-relative);
   color: var(--Test-text-color);
   background-color: var(--Test-background-color);
+}
+
+.Test_code {
+  color(--Test_code-text-color);
 }
 
 .Test_header {
