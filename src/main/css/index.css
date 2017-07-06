@@ -24,10 +24,13 @@
   --Test_separator-background-color: inherit;
   --Test_when-background-color: inherit;
   --Test_when-text-color: inherit;
+  --Test_when-margin-bottom: 1rem;
   --Test_then-background-color: inherit;
   --Test_then-text-color: inherit;
   --Test_then-background-color: inherit;
   --Test_then-text-color: inherit;
+  --Test_then-margin-bottom: 1rem;
+
   --Test_container-background-color: inherit;
   --Test_container-margin-left: 0rem;
   --Test_container-margin-top: 2rem;
@@ -96,6 +99,7 @@
   @apply(--u-font-weight-500);
   color: var(--Test_when-text-color);
   background-color: var(--Test_when-background-color);
+  margin-bottom: var(--Test_when-margin-bottom);
 }
 
 .Test_then {
@@ -103,6 +107,7 @@
   @apply(--u-font-weight-500);
   color: var(--Test_then-text-color);
   background-color: var(--Test_then-background-color);
+  margin-bottom: var(--Test_then-margin-bottom);
 }
 
 .Test_when::before {
