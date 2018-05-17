@@ -27,7 +27,7 @@
   "homepage": "https://github.com/superflycss/component-test#readme",
   "dependencies": {
     "@superflycss/variables-fonts": "^2.0.1",
-    "@superflycss/variables-layout": "^1.0.3"
+    "@superflycss/variables-layout": "^2.0.0"
   },
   "devDependencies": {
     "@superflycss/task-build": "^1.0.5",
