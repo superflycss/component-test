@@ -14,4 +14,4 @@ See [Usage](https://github.com/superflycss/superflycss/#usage)
 
 ## Tests
 
-[Superfly CSS test Component Tests](https://superflycss.github.io/component-test/deploy/test/html/)
+[Superfly CSS test Component Tests](https://superflycss.github.io/component-test/target/test/html/)
