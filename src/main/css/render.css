@@ -1,0 +1,14 @@
+/** @define Test */
+
+/*! superflycss/component-test | MIT License | https://github.com/superflycss/component-test/blob/master/LICENSE.md */
+
+@import "@superflycss/variables-fonts";
+@import "@superflycss/variables-layout";
+
+:root {
+  --TestRender-margin-bottom: 2rem;
+}
+
+.TestRender {
+  margin-bottom: var(--TestRender-margin-bottom);
+}

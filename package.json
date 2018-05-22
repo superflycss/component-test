@@ -2,12 +2,9 @@
   "name": "@superflycss/component-test",
   "version": "2.0.32",
   "description": "Test component",
-  "main": "src/main/css/index.css",
+  "main": "index.css",
   "scripts": {
-    "update": "ncu -a && npm i",
-    "clean": "gulp clean",
-    "build": "npm run clean && gulp build:css",
-    "test": "npm run build && gulp test:css"
+    "update": "ncu -a && npm i"
   },
   "repository": {
     "type": "git",
@@ -26,15 +23,20 @@
   },
   "homepage": "https://github.com/superflycss/component-test#readme",
   "dependencies": {
-    "@superflycss/variables-fonts": "^2.0.1",
-    "@superflycss/variables-layout": "^1.0.3"
+    "@superflycss/variables-fonts": "^3.0.0",
+    "@superflycss/variables-layout": "^2.0.0"
   },
   "devDependencies": {
-    "@superflycss/task-build": "^1.0.5",
-    "@superflycss/task-clean": "^1.0.2",
-    "@superflycss/task-deploy": "^2.0.4",
-    "@superflycss/task-test": "^1.0.1",
-    "gulp": "^3.9.1",
-    "npm-check-updates": "^2.12.1"
+    "@superflycss/component-body": "^1.0.1",
+    "@superflycss/component-display": "^1.0.2",
+    "@superflycss/component-header": "^2.1.0",
+    "@superflycss/foundation": "^2.0.3",
+    "@superflycss/utilities-colors": "^3.0.6",
+    "@superflycss/utilities-effects": "^2.1.0",
+    "@superflycss/utilities-fonts": "^3.3.7",
+    "@superflycss/utilities-format": "^1.1.1",
+    "@superflycss/utilities-layout": "^4.0.2",
+    "lite-server": "^2.3.0",
+    "npm-check-updates": "^2.14.2"
   }
 }

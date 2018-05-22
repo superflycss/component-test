@@ -1,0 +1,33 @@
+/** @define Test */
+
+/*! superflycss/component-test | MIT License | https://github.com/superflycss/component-test/blob/master/LICENSE.md */
+
+@import "@superflycss/variables-fonts";
+@import "@superflycss/variables-layout";
+
+:root {
+  --TestSeparator-height: 2rem;
+  --TestSeparator-margin-bottom: 0rem;
+  --TestSeparator-margin-top: 0rem;
+  --TestSeparator-border-color: inherit;
+  --TestSeparator-border-style: solid;
+  --TestSeparator-border-top: 0.5rem;
+  --TestSeparator-border-bottom: 0.5rem;
+  --TestSeparator-background-color: inherit;
+  --TestSeparator {
+    height: var(--TestSeparator-height);
+    background-color: var(--TestSeparator-background-color);      
+    margin-bottom: var(--TestSeparator-margin-bottom);
+    margin-top: var(--TestSeparator-margin-top);
+    border-color: var(--TestSeparator-border-color);
+    border-style: var(--TestSeparator-border-style);
+    border-top: var(--TestSeparator-border-top);
+    border-bottom: var(--TestSeparator-border-bottom);
+  }  
+}
+
+.TestSeparator {
+  @apply(--TestSeparator);
+  @apply(--u-width-100);
+  z-index: 100000;
+}

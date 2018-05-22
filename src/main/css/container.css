@@ -1,0 +1,32 @@
+/** @define Test */
+
+/*! superflycss/component-test | MIT License | https://github.com/superflycss/component-test/blob/master/LICENSE.md */
+
+@import "@superflycss/variables-fonts";
+@import "@superflycss/variables-layout";
+
+:root {
+  --TestContainer-margin-left: 0rem;
+  --TestContainer-margin-top: 0rem;
+  --TestContainer-padding-top: 1rem;
+  --TestContainer-text-color: inherit;  
+  --TestContainer-background-color: inherit;
+
+  --TestContainer {
+    margin-left: var(--TestContainer-margin-left);
+    margin-top: var(--TestContainer-margin-top);
+    padding-top: var(--TestContainer-padding-top);
+    color: var(--TestContainer-text-color);
+    background-color: var(--TestContainer-background-color);
+  }
+}
+
+.TestContainer {
+  @apply(--TestContainer);
+  @apply(--u-flex);
+  @apply(--u-flex-column);
+  @apply(--u-flex-align-items-start);
+  @apply(--u-width-100);
+  @apply(--u-margin-top-2rem);
+  @apply(--u-padding-top-1rem);
+}
