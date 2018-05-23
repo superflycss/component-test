@@ -1,0 +1,27 @@
+/** @define Test */
+
+/*! superflycss/component-test | MIT License | https://github.com/superflycss/component-test/blob/master/LICENSE.md */
+
+@import "@superflycss/variables-fonts";
+@import "@superflycss/variables-layout";
+
+:root {
+  --TestWithout-background-color: inherit;
+  --TestWithout-text-color: inherit;
+  --TestWithout-margin-bottom: 1rem;
+  --TestWithout {
+    background-color: var(--TestWithout-background-color);
+    color: var(--TestWithout-text-color);
+    margin-bottom: var(--TestWithout-margin-bottom);
+  }
+}
+
+.TestWithout {
+  @apply(--u-font-size-800);
+  @apply(--u-font-weight-500);
+  @apply(--TestWithout);
+}
+
+.TestWithout::before {
+  content: 'Without';
+}

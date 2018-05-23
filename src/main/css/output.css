@@ -13,6 +13,7 @@
 .TestOutput {
   @apply(--u-flex);
   @apply(--u-flex-column);
+  @apply(--u-padding-2rem)
   margin-left: var(--TestOutput-margin-left);
   overflow: var(--TestOutput-overflow);
   overflow-y: hidden;

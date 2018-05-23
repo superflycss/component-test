@@ -1,4 +1,3 @@
-
 @import "@superflycss/foundation";
 @import "../../main/css/";
 @import "@superflycss/component-display";
@@ -22,12 +21,12 @@ body {
   --Palette-text-color: #1AC0BA;
   --Palette_onHover-text-color: #e91eaa;
   --Palette_onHover-border-color: #e91eaa;
-  --Palette-background-color--Test: #CDDC38;
+  --Palette-background-color--TestHeader: #CDDC38;
 }
 
 /** Test overrides */
 :root {
-  --Test-background-color: var(--Palette-background-color--Test);
+  --TestHeader-background-color: var(--Palette-background-color--TestHeader);
 }
 
 /** Header component overrides */
@@ -48,16 +47,12 @@ body {
   --Header_link_onHover-border-color: var(--Palette_onHover-border-color);
 }
 
-.Test_when::before {
+.TestWhen::before {
   content: "When ";
   color: rgba(26, 192, 186, 0.64);
 }
 
-.Test_then {
-  margin-bottom: 3rem;
-}
-
-.Test_then::before {
+.TestThen::before {
   content: "Then ";
   color: rgba(26, 192, 186, 0.64);
 }
@@ -82,13 +77,20 @@ body {
 }
 */
 
-.Test-markup {
-  color: #FF8D0D;
-  padding-left: 2rem;
+.TestBox {
+  @apply(--u-padding-1rem);
+  @apply(--u-border-style-solid);
+}
+
+.TestBoxLeft {
+  @apply(--u-padding-1rem);
+  @apply(--u-border-style-solid);
+  @apply(--u-border-right-width-0px);
+}
+
+.TestMarkup {
+  color: darkslategray;
   background-color: #fff;
-  border-style: solid;
-  border-width: 1px;
-  border-color: gray;
   max-width: 50rem;
   margin-bottom: 3rem;
 }

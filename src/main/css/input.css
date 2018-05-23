@@ -20,6 +20,7 @@
 
 .TestInput {
   @apply(--TestInput);
+  @apply(--u-padding-2rem);
   @apply(--u-flex);
   @apply(--u-flex-column);
   overflow-y: hidden;

@@ -6,22 +6,21 @@
 @import "@superflycss/variables-layout";
 
 :root {
-  --Test_then-background-color: inherit;
-  --Test_then-text-color: inherit;
-  --Test_then-background-color: inherit;
-  --Test_then-text-color: inherit;
-  --Test_then-margin-bottom: 1rem;  
+  --TestThen-background-color: inherit;
+  --TestThen-text-color: inherit;
+  --TestThen-background-color: inherit;
+  --TestThen-text-color: inherit;
+  --TestThen-margin-bottom: 1rem;  
 }
 
 .TestThen {
   @apply(--u-font-size-800);
   @apply(--u-font-weight-500);
-  color: var(--Test_then-text-color);
-  background-color: var(--Test_then-background-color);
-  margin-bottom: var(--Test_then-margin-bottom);
+  color: var(--TestThen-text-color);
+  background-color: var(--TestThen-background-color);
+  margin-bottom: var(--TestThen-margin-bottom);
 }
 
 .TestThen::before {
   content: 'Then';
 }
-

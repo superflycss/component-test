@@ -16,41 +16,131 @@
     <a class="Header_link" href="https://github.com/superflycss/component-test/">Github</a>
   </header>
 
-  <div class="TestHeader">
-    <span class="TestCounter"></span>
-    <span class="TestComponent">Component Test</span>
+  <!-- START TEST 1-->
+
+  <div class="TestHeader ">
+    <span class="TestCounter "></span>
+    <span class="TestComponent">TestBoxLeft</span>
   </div>
 
-  <div class="TestContainer
-              u-md-flex-justify-start 
-              u-md-flex-row
-              u-md-flex-align-items-start">
-    <div class="TestInput u-flex-grow1">
-      <div class="TestWhen"></div>
-      <div class="TestDescription">
-        <code class="u-text-color-md-pink-400">u-flex </code> is applied.
+  <div class="TestContainer 
+              u-lg-flex-align-items-stretch 
+              u-lg-flex-justify-start 
+              u-lg-flex-row ">
+    <div class="TestInput 
+                u-flex-grow1 
+                u-box-shadow-0-2-12-0-dfe3eb ">
+      <div class="TestWhen "></div>
+      <div class="TestDescription ">
+        <code class="u-text-color-md-pink-400">TextBoxLeft </code> is applied.
       </div>
-      <pre class="TestMarkup">
-<code class="html">
-<div class="u-flex">
-<div class="u-background-color-orange
-            u-padding-1rem
-            u-border-right-style-solid
-            u-border-right-width-2px">
-First item in row</div>
-<div class="u-background-color-orange
-u-padding-1rem">
-Second item in row</div>
-</div>
-</code>
-</pre>
-    </div>
-    <!--End test input-->
-    <div class="TestOutput u-flex-grow1">
-      <div class="TestThen"></div>
-      <div class="TestDescription" u-md-margin-bottom-2x ">The items are laid out in a row.</div>
-</div>
-</div><!--End test Output-->
 
+
+      <pre class="TestMarkup ">
+
+        <code class="html ">
+<div class="TestBoxLeft">TextBoxLeft</div>
+        </code>
+
+
+    </pre>
+    </div>
+    <!--END TEST INPUT-->
+    <div class="TestOutput 
+                u-flex-grow1 
+                u-box-shadow-0-2-12-0-dfe3eb ">
+      <div class="TestThen "></div>
+      <div class="TestDescription">TextBoxLeft is rendered.</div>
+    </div>
+  </div>
+  <!--END TEST OUTPUT-->
+
+
+
+  <!--START TEST 2-->
+
+
+
+  <div class="TestHeader ">
+    <span class="TestCounter "></span>
+    <span class="TestComponent">TestBox</span>
+  </div>
+
+  <div class="TestContainer 
+              u-lg-flex-align-items-stretch 
+              u-lg-flex-justify-start 
+              u-lg-flex-row ">
+    <div class="TestInput 
+                u-flex-grow1 
+                u-box-shadow-0-2-12-0-dfe3eb ">
+      <div class="TestWhen "></div>
+      <div class="TestDescription ">
+        <code class="u-text-color-md-pink-400">TextBox</code> is applied.
+      </div>
+
+
+      <pre class="TestMarkup ">
+
+        <code class="html ">
+<div class="TestBoxLeft">TextBox</div>
+        </code>
+
+
+    </pre>
+    </div>
+    <!--END TEST INPUT-->
+    <div class="TestOutput 
+                u-flex-grow1 
+                u-box-shadow-0-2-12-0-dfe3eb ">
+      <div class="TestThen "></div>
+      <div class="TestDescription">TextBox is rendered.</div>
+    </div>
+  </div>
+  <!--END TEST OUTPUT-->
+
+
+
+  <!--TEST 3 -->
+
+
+  <div class="TestHeader ">
+    <span class="TestCounter "></span>
+    <span class="TestUtilities">u-flex</span>
+  </div>
+
+  <div class="TestContainer 
+              u-lg-flex-align-items-stretch 
+              u-lg-flex-justify-start 
+              u-lg-flex-row ">
+    <div class="TestInput 
+                u-flex-grow1 
+                u-box-shadow-0-2-12-0-dfe3eb ">
+      <div class="TestWhen "></div>
+      <div class="TestDescription ">
+        <code class="u-text-color-md-pink-400">u-flex</code> is applied.
+      </div>
+
+
+      <pre class="TestMarkup ">
+
+        <code class="html ">
+<div class="u-flex">
+<div class="TestBoxLeft">TestBoxLeft</div>
+<div class="TestBox">TestBox</div>
+</div>
+       </code>
+
+     </pre>
+     </div>
+    <!--END TEST INPUT-->
+     <div class="TestOutput 
+                 u-flex-grow1 
+                 u-box-shadow-0-2-12-0-dfe3eb ">
+      <div class="TestThen "></div>
+      <div class="TestDescription">Test boxes are rendered as flex items.</div>
+    </div>
+  </div>
+  <!--END TEST OUTPUT-->
 </body>
+
 </html>
