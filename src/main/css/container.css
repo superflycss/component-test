@@ -8,6 +8,7 @@
 :root {
   --TestContainer-margin-left: 0rem;
   --TestContainer-margin-top: 0rem;
+  --TestContainer-margin-bottom: 2rem;
   --TestContainer-padding-top: 1rem;
   --TestContainer-text-color: inherit;  
   --TestContainer-background-color: inherit;
@@ -15,6 +16,7 @@
   --TestContainer {
     margin-left: var(--TestContainer-margin-left);
     margin-top: var(--TestContainer-margin-top);
+    margin-bottom: var(--TestContainer-margin-bottom);
     padding-top: var(--TestContainer-padding-top);
     color: var(--TestContainer-text-color);
     background-color: var(--TestContainer-background-color);

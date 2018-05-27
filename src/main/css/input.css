@@ -6,12 +6,10 @@
 @import "@superflycss/variables-layout";
 
 :root {
-  --TestInput-min-width: 45rem;
   --TestInput-margin-left: 2rem;
-  --TestInput-margin-right: 3rem;
+  --TestInput-margin-right: 1rem;
   --TestInput-overflow: auto;
   --TestInput {
-    min-width: var(--TestInput-min-width);
     overflow: var(--TestInput-overflow);
     margin-right: var(--TestInput-margin-right);
     margin-left: var(--TestInput-margin-left);  
@@ -22,6 +20,7 @@
   @apply(--TestInput);
   @apply(--u-padding-2rem);
   @apply(--u-flex);
+  @apply(--u-flex-grow1);
   @apply(--u-flex-column);
   overflow-y: hidden;
 }

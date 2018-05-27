@@ -7,14 +7,15 @@
 
 :root {
   --TestOutput-overflow: auto;
-  --TestOutput-margin-left: 2rem;
+  --TestOutput-margin-right: 2rem;
 }
 
 .TestOutput {
   @apply(--u-flex);
   @apply(--u-flex-column);
-  @apply(--u-padding-2rem)
-  margin-left: var(--TestOutput-margin-left);
+  @apply(--u-padding-2rem);
+  @apply(--u-flex-grow1);
+  margin-right: var(--TestOutput-margin-right);
   overflow: var(--TestOutput-overflow);
   overflow-y: hidden;
 }
