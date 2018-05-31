@@ -4,6 +4,7 @@
 
 @import "@superflycss/variables-fonts";
 @import "@superflycss/variables-layout";
+@import "@superflycss/variables-dimension";
 
 :root {
   --TestContainer-margin-left: 0rem;
@@ -31,4 +32,12 @@
   @apply(--u-width-100);
   @apply(--u-margin-top-2rem);
   @apply(--u-padding-top-1rem);
+}
+
+@media (--lg-viewport) {
+  .TestContainer {
+    @apply(--u-flex-align-items-stretch);
+    @apply(--u-flex-justify-start);
+    @apply(--u-flex-row);    
+  }
 }
