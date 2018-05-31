@@ -4,18 +4,34 @@
 
 @import "@superflycss/variables-fonts";
 @import "@superflycss/variables-layout";
+@import "@superflycss/variables-dimension";
 
 :root {
   --TestOutput-overflow: auto;
-  --TestOutput-margin-right: 2rem;
+  --TestOutput-margin-top: 2rem;
+  --TestOutput-margin-left: 0rem;
+  --TestOutput-margin-right: 0rem;
+  --TestOutput {
+    overflow: var(--TestOutput-overflow);      
+    margin-top: var(--TestOutput-margin-top);
+    margin-left: var(--TestOutput-margin-left);
+    margin-right: var(--TestOutput-margin-right);
+  }
 }
 
 .TestOutput {
+  @apply(--TestOutput);
   @apply(--u-flex);
   @apply(--u-flex-column);
   @apply(--u-padding-2rem);
   @apply(--u-flex-grow1);
-  margin-right: var(--TestOutput-margin-right);
-  overflow: var(--TestOutput-overflow);
   overflow-y: hidden;
+}
+
+
+@media (--lg-viewport) {
+  .TestOutput {
+    margin-top: 0px;
+    @apply(--u-margin-left-2rem);
+  }
 }

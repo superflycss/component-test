@@ -6,11 +6,13 @@
 @import "@superflycss/variables-layout";
 
 :root {
-  --TestInput-margin-left: 2rem;
-  --TestInput-margin-right: 1rem;
+  --TestInput-margin-top: 0rem;
+  --TestInput-margin-left: 0rem;
+  --TestInput-margin-right: 0rem;
   --TestInput-overflow: auto;
   --TestInput {
     overflow: var(--TestInput-overflow);
+    margin-top: var(--TestInput-margin-top);
     margin-right: var(--TestInput-margin-right);
     margin-left: var(--TestInput-margin-left);  
   }
