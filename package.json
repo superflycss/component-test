@@ -4,7 +4,8 @@
   "description": "Test component",
   "main": "index.css",
   "scripts": {
-    "update": "ncu -a && npm i"
+    "update": "ncu -a && npm i",
+    "publish": "npm version patch"
   },
   "repository": {
     "type": "git",
@@ -36,7 +37,7 @@
     "@superflycss/utilities-effects": "^2.1.0",
     "@superflycss/utilities-fonts": "^3.3.7",
     "@superflycss/utilities-format": "^1.1.1",
-    "@superflycss/utilities-layout": "^4.0.2",
+    "@superflycss/utilities-layout": "^4.0.3",
     "lite-server": "^2.3.0",
     "npm-check-updates": "^2.14.2"
   }
