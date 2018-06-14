@@ -1,11 +1,11 @@
 {
   "name": "@superflycss/component-test",
-  "version": "3.3.11",
+  "version": "3.3.10",
   "description": "Test component",
   "main": "index.css",
   "scripts": {
     "update": "ncu -a && npm i",
-    "publish": "npm version patch"
+    "publish": "npm i && npm version patch && sfc c && sfc d && cd dist && npm publish"
   },
   "repository": {
     "type": "git",
