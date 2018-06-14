@@ -1,0 +1,13 @@
+@import "@superflycss/variables-layout";
+
+.TestBox {
+    @apply(--u-padding-1rem);
+    @apply(--u-border-style-solid);
+  }
+  
+.TestBoxLeft {
+    @apply(--u-padding-1rem);
+    @apply(--u-border-style-solid);
+    @apply(--u-border-right-width-0px);
+  }
+  
