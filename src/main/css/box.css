@@ -24,3 +24,7 @@
   @apply(--u-border-right-width-0px);
 }
   
+.TestBoxTop {
+  @apply(--TestBox);
+  @apply(--u-border-bottom-width-0px);
+}
