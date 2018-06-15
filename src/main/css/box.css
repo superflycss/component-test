@@ -28,3 +28,26 @@
   @apply(--TestBox);
   @apply(--u-border-bottom-width-0px);
 }
+
+:root {
+  --TestCanvas-padding: 1rem;
+  --TestCanvas-border-style: none;
+  --TestCanvas-border-width: medium;
+  --TestCanvas-border-color: currentColor;
+  --TestCanvas-background-color: inherit;
+  --TestCanvas-min-height: 0rem;
+  --TestCanvas-min-width: 0rem;
+  --TestCanvas {
+    padding: var(--TestCanvas-padding);
+    border-style: var(--TestCanvas-border-style);
+    border-width: var(--TestCanvas-border-width);
+    border-color: var(--TestCanvas-border-color);    
+    background-color: var(--TestCanvas-background-color);    
+    min-height: var(--TestCanvas-min-height);    
+    min-width: var(--TestCanvas-min-width); 
+  }
+}
+
+.TestCanvas {
+  @apply(--TestCanvas);
+}

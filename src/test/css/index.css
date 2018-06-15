@@ -63,6 +63,13 @@ body {
 }
 
 
+/** TestMarkup overrides */
+:root {
+  --TestCanvas-min-height: 5rem;
+  --TestCanvas-min-width: 20rem;
+}
+
+
 .hljs-tag {
   padding: 0px;
   white-space: normal;
