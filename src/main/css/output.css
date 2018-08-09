@@ -18,22 +18,26 @@
     margin-top: var(--TestOutput-margin-top);
     margin-left: var(--TestOutput-margin-left);
     margin-right: var(--TestOutput-margin-right);
-  }
+    @apply(--u-flex);
+    @apply(--u-flex-column);
+    @apply(--u-padding-2rem);
+    @apply(--u-flex-grow1);
+    }
 }
 
 .TestOutput {
   @apply(--TestOutput);
-  @apply(--u-flex);
-  @apply(--u-flex-column);
-  @apply(--u-padding-2rem);
-  @apply(--u-flex-grow1);
   overflow-y: hidden;
 }
-
 
 @media (--lg-viewport) {
   .TestOutput {
     margin-top: 0px;
     @apply(--u-margin-left-2rem);
   }
+}
+
+.TestOutput--column {
+  @apply(--TestOutput);
+  overflow-y: hidden;
 }

@@ -41,3 +41,13 @@
     @apply(--u-flex-row);    
   }
 }
+
+.TestContainer--column {
+  @apply(--TestContainer);
+  @apply(--u-flex);
+  @apply(--u-flex-column);
+  @apply(--u-flex-align-items-stretch);
+  @apply(--u-width-100);
+  @apply(--u-margin-top-2rem);
+  @apply(--u-padding-top-1rem);
+}
