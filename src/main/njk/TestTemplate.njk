@@ -1,0 +1,78 @@
+{% macro component( name, when, then ) %}
+  <div class="TestHeader ">
+    <span class="TestCounter"></span>
+    <span class="TestComponent">{{name}}</span>
+  </div>
+  <div class="TestContainer">
+    <div class="TestInput">
+      <div class="TestWhen "></div>
+      <div class="TestDescription ">{{when|safe }}</div>
+      <pre class="TestMarkup ">
+        <code class="html">         
+{{ caller() }}
+       </code>
+     </pre>
+     </div>
+    <!--END TEST INPUT-->
+     <div class="TestOutput">
+      <div class="TestThen "></div>
+      <div class="TestDescription">{{then|safe}}</div>
+     <div class="TestRender">
+{{ caller() }}
+      </div>      
+    </div>
+  </div>
+{% endmacro %}
+
+{% macro componentColumn( name, when, then ) %}
+  <div class="TestHeader">
+    <span class="TestCounter"></span>
+    <span class="TestComponent">{{name}}</span>
+  </div>
+  <div class="TestContainer--column">
+    <div class="TestInput">
+      <div class="TestWhen "></div>
+      <div class="TestDescription ">{{when|safe }}</div>
+      <pre class="TestMarkup ">
+        <code class="html">         
+{{ caller() }}
+       </code>
+     </pre>
+     </div>
+    <!--END TEST INPUT-->
+     <div class=".TestOutput--column">
+      <div class="TestThen "></div>
+      <div class="TestDescription">{{then|safe}}</div>
+     <div class="TestRender">
+{{ caller() }}
+      </div>      
+    </div>
+  </div>
+{% endmacro %}
+
+
+{% macro utility( name, when, then ) %}
+  <div class="TestHeader">
+    <span class="TestCounter"></span>
+    <span class="TestUtilities">{{name}}</span>
+  </div>
+  <div class="TestContainer">
+    <div class="TestInput">
+      <div class="TestWhen "></div>
+      <div class="TestDescription ">{{when|safe}}</div>
+      <pre class="TestMarkup ">
+        <code class="html">         
+{{ caller() }}
+       </code>
+     </pre>
+     </div>
+    <!--END TEST INPUT-->
+     <div class="TestOutput">
+      <div class="TestThen"></div>
+      <div class="TestDescription">{{then|safe}}</div>
+     <div class="TestRender">
+{{ caller() }}
+      </div>      
+    </div>
+  </div>
+{% endmacro %}

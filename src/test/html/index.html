@@ -1,193 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <title>Test @superflycss/color-utilities</title>
-  <link href="../css/index.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-</head>
+{% import "TestHead.njk" as TestHead %}
+{% import "TestHeader.njk" as TestHeader %}
+{% import "TestTemplate.njk" as Test %}
+
+{{ TestHead.component( 'test' ) }}
 
 <body>
-  <header class="Header--column">
-    <h1 class="Display--fs400fw700">Component Test</h1>
-    <a class="Header_link" href="https://github.com/superflycss/component-test/">Github</a>
-  </header>
 
-  <!-- START TEST 1-->
+{{ TestHeader.render( 'test' ) }}
 
-  <div class="TestHeader ">
-    <span class="TestCounter"></span>
-    <span class="TestComponent">TestBoxLeft</span>
-  </div>
+<!--START TEST 1-->
 
-  <div class="TestContainer">
-    <div class="TestInput 
-                u-box-shadow-0-2-12-0-dfe3eb ">
-      <div class="TestWhen"></div>
-      <div class="TestDescription ">
-        <code class="u-text-color-md-pink-400">TextBoxLeft </code> is applied.
-      </div>
-
-      <pre class="TestMarkup ">
-        <code class="html ">
+{% set when1 %}
+<code class="u-text-color-md-pink-400">TextBoxLeft </code> is applied.
+{% endset %}
+{% call Test.component( 'TextBoxLeft', when1, 'TextBoxLeft is rendered.' ) %}
 <div class="TestBoxLeft">TextBoxLeft</div>
-        </code>
+{% endcall %}
 
-
-    </pre>
-    </div>
-    <!--END TEST INPUT-->
-    <div class="TestOutput 
-                u-box-shadow-0-2-12-0-dfe3eb ">
-      <div class="TestThen"></div>
-      <div class="TestDescription">TextBoxLeft is rendered.</div>
-    </div>
-  </div>
-  <!--END TEST OUTPUT-->
-
-
-
-  <!--START TEST 2-->
-
-
-
-  <div class="TestHeader ">
-    <span class="TestCounter "></span>
-    <span class="TestComponent">TestBox</span>
-  </div>
-
-  <div class="TestContainer">
-    <div class="TestInput 
-                u-box-shadow-0-2-12-0-dfe3eb ">
-      <div class="TestWhen "></div>
-      <div class="TestDescription ">
-        <code class="u-text-color-md-pink-400">TextBox</code> is applied.
-      </div>
-
-
-      <pre class="TestMarkup ">
-        <code class="html ">
+<!--START TEST 2-->
+{% set when2 %}
+<code class="u-text-color-md-pink-400">TextBox</code> is applied.
+{% endset %}
+{% call Test.component( 'TextBox', when2, 'TextBox is rendered.' ) %}
 <div class="TestBox">TextBox</div>
-        </code>
-    </pre>
-    </div>
-    <!--END TEST INPUT-->
-    <div class="TestOutput 
-                u-box-shadow-0-2-12-0-dfe3eb ">
-      <div class="TestThen "></div>
-      <div class="TestDescription">TextBox is rendered.</div>
-    </div>
-  </div>
-  <!--END TEST OUTPUT-->
+{% endcall %}
 
-
-  <!--TEST 3 -->
-
-  <div class="TestHeader ">
-    <span class="TestCounter "></span>
-    <span class="TestComponent">TestCanvas</span>
-  </div>
-  <div class="TestContainer">
-    <div class="TestInput 
-                u-box-shadow-0-2-12-0-dfe3eb">
-      <div class="TestWhen "></div>
-      <div class="TestDescription ">
-        <code class="u-text-color-md-pink-400">TestCanvas</code> is applied
-        with <code class="u-text-color-md-pink-400">--TestCanvas-min-width: 20rem;</code>
-        and with <code class="u-text-color-md-pink-400">--TestCanvas-min-height: 10rem;</code>.
-        variable overrides.
-      </div>
-      <pre class="TestMarkup ">
-        <code class="html">            
+<!--TEST 3 -->
+{% set when3 %}
+<code class="u-text-color-md-pink-400">TestCanvas</code> is applied
+with <code class="u-text-color-md-pink-400">--TestCanvas-min-width: 20rem;</code>
+and with <code class="u-text-color-md-pink-400">--TestCanvas-min-height: 10rem;</code>.
+variable overrides.
+{% endset %}
+{% call Test.component( 'TestCanvas', when3, 'TestCanvas is rendered.' ) %}
 <div class="TestCanvas 
             u-background-color-md-blue-grey-100">
 </div>
-       </code>
+{% endcall %}
 
-     </pre>
-     </div>
-    <!--END TEST INPUT-->
-     <div class="TestOutput 
-                 u-box-shadow-0-2-12-0-dfe3eb ">
-      <div class="TestThen "></div>
-      <div class="TestDescription">The TestCanvas is rendered.</div>
-    </div>
-  </div>
-  <!--END TEST OUTPUT-->
-
-
-  <!--TEST 4 -->
-
-
-  <div class="TestHeader ">
-    <span class="TestCounter "></span>
-    <span class="TestUtilities">u-flex</span>
-  </div>
-
-  <div class="TestContainer">
-    <div class="TestInput 
-                u-box-shadow-0-2-12-0-dfe3eb ">
-      <div class="TestWhen "></div>
-      <div class="TestDescription ">
-        <code class="u-text-color-md-pink-400">u-flex</code> is applied.
-      </div>
-
-
-      <pre class="TestMarkup ">
-        <code class="html ">
+<!--TEST 4 -->
+{% set when4 %}
+<code class="u-text-color-md-pink-400">u-flex</code> is applied.
+{% endset %}
+{% call Test.utility( 'u-flex', when4, 'Test boxes are rendered as flex items.' ) %}
 <div class="u-flex">
   <div class="TestBoxLeft">TestBoxLeft</div>
   <div class="TestBox">TestBox</div>
 </div>
-       </code>
-     </pre>
-     </div>
-    <!--END TEST INPUT-->
-     <div class="TestOutput 
-                 u-box-shadow-0-2-12-0-dfe3eb ">
-      <div class="TestThen "></div>
-      <div class="TestDescription">Test boxes are rendered as flex items.</div>
-    </div>
-  </div>
-  <!--END TEST OUTPUT-->
-  
-  <!--START TEST -->
+{% endcall %}
 
-  <div class="TestHeader ">
-    <span class="TestCounter "></span>
-    <span class="TestComponent">TestContainer--column</span>
-  </div>
-
-  <div class="TestContainer--column">
-    <div class="TestInput 
-                u-box-shadow-0-2-12-0-dfe3eb ">
-      <div class="TestWhen "></div>
-      <div class="TestDescription ">
-        <code class="u-text-color-md-pink-400">TestContainer--column and TestOutput--column</code> 
-        is used to contain the test markup (Look at test source code to see markup).
-      </div>
-
-      <pre class="TestMarkup ">
-        <code class="html ">
+<!--TEST 4 -->
+{% set when5 %}
+<code class="u-text-color-md-pink-400">TestContainer--column and TestOutput--column</code> 
+is used to contain the test markup (Look at TestTemplate.njk source code to see markup).
+{% endset %}
+{% call Test.componentColumn( 'TestContainer--column', when5, 'Test containers are rendered in columns regardless of viewport size.' ) %}
 <div class="u-flex">
   <div class="TestBoxLeft">TestBoxLeft</div>
   <div class="TestBox">TestBox</div>
 </div>
-       </code>
-     </pre>
-     </div>
-    <!--END TEST INPUT-->
-     <div class="TestOutput--column 
-                 u-box-shadow-0-2-12-0-dfe3eb ">
-      <div class="TestThen "></div>
-      <div class="TestDescription">Test containers are rendered in columns regardless of viewport size.</div>
-    </div>
-  </div>
-  <!--END TEST OUTPUT-->
-
+{% endcall %}
 </body>
 
 </html>
