@@ -1,6 +1,13 @@
-{% macro render( name ) %}
+{% macro component( name ) %}
   <header class="Header--column">
     <h1 class="Display--fs400fw700">Component {{name|title}}</h1>
+    <a class="Header_link" href="https://github.com/superflycss/component-{{name}}/">Github</a>
+  </header>
+{% endmacro %}
+
+{% macro utility( name ) %}
+  <header class="Header--column">
+    <h1 class="Display--fs400fw700">{{name|title}} Utility Tests </h1>
     <a class="Header_link" href="https://github.com/superflycss/component-{{name}}/">Github</a>
   </header>
 {% endmacro %}
