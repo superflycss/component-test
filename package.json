@@ -1,6 +1,6 @@
 {
   "name": "@superflycss/component-test",
-  "version": "3.6.15",
+  "version": "3.6.16",
   "description": "Test component",
   "main": "index.css",
   "scripts": {
@@ -32,12 +32,12 @@
     "@superflycss/component-display": "^1.0.2",
     "@superflycss/component-header": "^2.1.0",
     "@superflycss/foundation": "^2.0.3",
-    "@superflycss/utilities-colors": "^3.0.6",
+    "@superflycss/utilities-colors": "^3.0.9",
     "@superflycss/utilities-effects": "^2.1.0",
     "@superflycss/utilities-fonts": "^3.3.7",
     "@superflycss/utilities-format": "^1.1.1",
-    "@superflycss/utilities-layout": "^4.0.3",
+    "@superflycss/utilities-layout": "^4.0.6",
     "lite-server": "^2.4.0",
-    "npm-check-updates": "^2.14.2"
+    "npm-check-updates": "^2.15.0"
   }
 }
