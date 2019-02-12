@@ -1,6 +1,6 @@
 {
   "name": "@superflycss/component-test",
-  "version": "3.6.22",
+  "version": "3.6.23",
   "description": "Test component",
   "main": "index.css",
   "scripts": {
