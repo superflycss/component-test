@@ -36,7 +36,7 @@
     "@superflycss/utilities-effects": "^2.1.0",
     "@superflycss/utilities-fonts": "^3.3.7",
     "@superflycss/utilities-format": "^1.1.1",
-    "@superflycss/utilities-layout": "^4.0.8",
+    "@superflycss/utilities-layout": "^4.0.15",
     "lite-server": "^2.4.0",
     "npm-check-updates": "^2.15.0"
   }
