@@ -34,6 +34,11 @@
   @apply(--u-border-bottom-width-0px);
 }
 
+.TestBoxBottom {
+  @apply(--TestBox);
+  @apply(--u-border-top-width-0px);
+}
+
 :root {
   --TestCanvas-padding: 1rem;
   --TestCanvas-border-style: none;
