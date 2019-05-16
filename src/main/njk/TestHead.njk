@@ -1,21 +1,21 @@
-{% macro component( name ) %}
+{% macro component( name, css="../css/index.css"  ) %}
 <head>
   <meta charset="utf-8">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>Tests for @superflycss/component-{{ name }}</title>
-  <link href="../css/index.css" rel="stylesheet">
+  <link href="{{css}}" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 {% endmacro %}
 
-{% macro utility( name ) %}
+{% macro utility( name, css="../css/index.css" ) %}
 <head>
   <meta charset="utf-8">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>Tests for @superflycss/utilities-{{ name }}</title>
-  <link href="../css/index.css" rel="stylesheet">
+  <link href="{{css}}" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 {% endmacro %}
