@@ -1,0 +1,23 @@
+@import "@superflycss/variables-fonts";
+@import "@superflycss/variables-layout";
+
+:root {
+  --TestWhen-background-color: inherit;
+  --TestWhen-text-color: inherit;
+  --TestWhen-margin-bottom: 1rem;
+  --TestWhen {
+    background-color: var(--TestWhen-background-color);
+    color: var(--TestWhen-text-color);
+    margin-bottom: var(--TestWhen-margin-bottom);
+  }
+}
+
+.TestWhen {
+  @apply(--u-font-size-800);
+  @apply(--u-font-weight-500);
+  @apply(--TestWhen);
+}
+
+.TestWhen::before {
+  content: 'When';
+}

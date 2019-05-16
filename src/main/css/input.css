@@ -1,0 +1,24 @@
+@import "@superflycss/variables-fonts";
+@import "@superflycss/variables-layout";
+
+:root {
+  --TestInput-margin-top: 0rem;
+  --TestInput-margin-left: 0rem;
+  --TestInput-margin-right: 0rem;
+  --TestInput-overflow: auto;
+  --TestInput {
+    overflow: var(--TestInput-overflow);
+    margin-top: var(--TestInput-margin-top);
+    margin-right: var(--TestInput-margin-right);
+    margin-left: var(--TestInput-margin-left);  
+  }
+}
+
+.TestInput {
+  overflow-y: hidden;
+  @apply(--TestInput);
+  @apply(--u-padding-2rem);
+  @apply(--u-flex);
+  @apply(--u-flex-grow1);
+  @apply(--u-flex-column);
+}

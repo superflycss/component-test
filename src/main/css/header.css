@@ -1,0 +1,21 @@
+@import "@superflycss/variables-fonts";
+@import "@superflycss/variables-layout";
+
+:root {
+  --TestHeader-background-color: inherit;
+  --TestHeader-text-color: inherit;
+  --TestHeader {
+    background-color: var(--TestHeader-background-color);
+    color: var(--TestHeader-text-color);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.TestHeader {
+  @apply(--TestHeader);
+  @apply(--u-height-5rem);
+}
+

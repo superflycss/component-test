@@ -1,0 +1,11 @@
+:root {
+  --TestDescription-margin-bottom: 2rem;
+  --TestDescription-line-height: 190%;
+  --TestDescription-word-break: keep-all;
+}
+
+.TestDescription {
+  margin-bottom: var(--TestDescription-margin-bottom);
+  line-height: var(--TestDescription-line-height);
+  word-break: var(--TestDescription-word-break);
+}

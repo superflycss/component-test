@@ -1,0 +1,7 @@
+:root {
+  --TestEm-text-color: inherited;
+}
+
+.TestEm {
+  color: var(--TestEm-text-color);
+}

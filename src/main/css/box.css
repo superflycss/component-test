@@ -1,0 +1,69 @@
+@import "@superflycss/variables-layout";
+
+:root {
+  --TestBox-padding: 1rem;
+  --TestBox-border-style: solid;
+  --TestBox-border-width: medium;
+  --TestBox-border-color: currentColor;
+  --TestBox-background-color: inherit;
+  --TestBox {
+    padding: var(--TestBox-padding);
+    border-style: var(--TestBox-border-style);
+    border-width: var(--TestBox-border-width);
+    border-color: var(--TestBox-border-color);    
+    background-color: var(--TestBox-background-color);    
+  }
+}
+
+.TestBox {
+    @apply(--TestBox);
+}
+  
+.TestBoxLeft {
+  @apply(--TestBox);
+  @apply(--u-border-right-width-0px);
+}
+
+.TestBoxRight {
+  @apply(--TestBox);
+  @apply(--u-border-left-width-0px);
+}
+
+.TestBoxTop {
+  @apply(--TestBox);
+  @apply(--u-border-bottom-width-0px);
+}
+
+.TestBoxBottom {
+  @apply(--TestBox);
+  @apply(--u-border-top-width-0px);
+}
+
+.TestBoxBottomLeft {
+  @apply(--TestBox);
+  @apply(--u-border-top-width-0px);
+  @apply(--u-border-right-width-0px);
+}
+
+:root {
+  --TestCanvas-padding: 1rem;
+  --TestCanvas-border-style: none;
+  --TestCanvas-border-width: medium;
+  --TestCanvas-border-color: currentColor;
+  --TestCanvas-background-color: inherit;
+  --TestCanvas-min-height: 0rem;
+  --TestCanvas-min-width: 0rem;
+  --TestCanvas {
+    padding: var(--TestCanvas-padding);
+    border-style: var(--TestCanvas-border-style);
+    border-width: var(--TestCanvas-border-width);
+    border-color: var(--TestCanvas-border-color);    
+    background-color: var(--TestCanvas-background-color);    
+    min-height: var(--TestCanvas-min-height);    
+    min-width: var(--TestCanvas-min-width); 
+  }
+}
+
+.TestCanvas {
+  @apply(--TestCanvas);
+}

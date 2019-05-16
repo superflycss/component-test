@@ -1,0 +1,123 @@
+/*!  |   superflycss/utilities-layout |
+     |   MIT License                  |
+     |   https://github.com/superflycss/utilities-layout/blob/master/LICENSE.md */
+
+/** @define variables */
+
+:root {
+
+  /*
+   * Shorthand
+   *
+   * Declares all values instead of keywords like 'initial' to work around IE10
+   * https://www.w3.org/TR/css-flexbox-1/#flex-common
+   *
+   * 1. Fixes issue in IE 10 where flex-basis is ignored - https://git.io/vllMt
+   *    This ensures it overrides flex-basis set in other utilities.
+   */
+}
+
+/** @define variables */
+
+/** @define utilities */
+
+/** @define variables */
+
+/** @define variables */
+
+/** Note that we have mirrored the zindex variables from variables-dimension 
+ *  in order to mirror the corresponding utilty in utilities-layout.
+ */
+
+/*! superflycss/variables-dimension | MIT License | https://github.com/superflycss/variables-dimension/blob/master/LICENSE.md */
+
+/*! bootstrap v4.0.0-alpha | MIT License | https://github.com/twbs/bootstrap/blob/master/LICENSE */
+
+/*
+=======================================
+ DIMENSION VARIABLES
+=======================================
+ 0:  Spacers.
+ 1:  Borders.
+ 2:  Z-Index
+ 3:  Default Media Breakpoints
+================================
+*/
+
+/* 0 */
+
+/* 1 */
+
+/* 2 */
+
+/* 3 */
+
+/** @define variables */
+
+/** @define variables */
+
+/** @define variables */
+
+.TestBox {
+  padding: 1rem;
+  border-style: solid;
+  border-width: medium;
+  border-color: currentColor;  
+    background-color: inherit;
+}
+
+.TestBoxLeft {
+  padding: 1rem;
+  border-style: solid;
+  border-width: medium;
+  border-color: currentColor;  
+    background-color: inherit;
+  border-right-width: 0px;
+}
+
+.TestBoxRight {
+  padding: 1rem;
+  border-style: solid;
+  border-width: medium;
+  border-color: currentColor;  
+    background-color: inherit;
+  border-left-width: 0px;
+}
+
+.TestBoxTop {
+  padding: 1rem;
+  border-style: solid;
+  border-width: medium;
+  border-color: currentColor;  
+    background-color: inherit;
+  border-bottom-width: 0px;
+}
+
+.TestBoxBottom {
+  padding: 1rem;
+  border-style: solid;
+  border-width: medium;
+  border-color: currentColor;  
+    background-color: inherit;
+  border-top-width: 0px;
+}
+
+.TestBoxBottomLeft {
+  padding: 1rem;
+  border-style: solid;
+  border-width: medium;
+  border-color: currentColor;  
+    background-color: inherit;
+  border-top-width: 0px;
+  border-right-width: 0px;
+}
+
+.TestCanvas {
+  padding: 1rem;
+  border-style: none;
+  border-width: medium;
+  border-color: currentColor;  
+    background-color: inherit;  
+    min-height: 0rem;  
+    min-width: 0rem;
+}

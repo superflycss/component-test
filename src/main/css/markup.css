@@ -1,0 +1,13 @@
+:root {
+  --TestMarkup-text-color: inherit;
+  --TestMarkup-background-color: inherit;
+  --TestMarkup {
+    color: var(--TestMarkup-text-color);      
+    background-color: var(--TestMarkup-background-color);     
+    margin-top: -0.8rem; 
+  }
+}
+
+.TestMarkup {
+    @apply(--TestMarkup);
+}

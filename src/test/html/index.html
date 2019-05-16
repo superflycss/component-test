@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% import "TestHead.njk" as TestHead %}
+{% import "TestHeader.njk" as TestHeader %}
+{% import "TestTemplate.njk" as Test %}
+
+{{ TestHead.component( 'test' ) }}
+
+<body>
+{{ TestHeader.component( 'test' ) }}
+
+<!--START TEST 1-->
+
+{% set when1 %}
+<code class="u-text-color-md-pink-400">TextBoxLeft </code> is applied.
+{% endset %}
+{% call Test.component( 'TextBoxLeft', when1, 'TextBoxLeft is rendered.' ) %}
+<div class="TestBoxLeft">TextBoxLeft</div>
+{% endcall %}
+
+<!--START TEST 2-->
+{% set when2 %}
+<code class="u-text-color-md-pink-400">TextBox</code> is applied.
+{% endset %}
+{% call Test.component( 'TextBox', when2, 'TextBox is rendered.' ) %}
+<div class="TestBox">TextBox</div>
+{% endcall %}
+
+<!--TEST 3 -->
+{% set when3 %}
+<code class="u-text-color-md-pink-400">TestCanvas</code> is applied
+with <code class="u-text-color-md-pink-400">--TestCanvas-min-width: 20rem;</code>
+and with <code class="u-text-color-md-pink-400">--TestCanvas-min-height: 10rem;</code>.
+variable overrides.
+{% endset %}
+{% call Test.component( 'TestCanvas', when3, 'TestCanvas is rendered.' ) %}
+<div class="TestCanvas 
+            u-background-color-md-blue-grey-100">
+</div>
+{% endcall %}
+
+<!--TEST 4 -->
+{% set when4 %}
+<code class="u-text-color-md-pink-400">u-flex</code> is applied.
+{% endset %}
+{% call Test.utility( 'u-flex', when4, 'Test boxes are rendered as flex items.' ) %}
+<div class="u-flex">
+  <div class="TestBoxLeft">TestBoxLeft</div>
+  <div class="TestBox">TestBox</div>
+</div>
+{% endcall %}
+
+<!--TEST 4 -->
+{% set when5 %}
+<code class="u-text-color-md-pink-400">TestContainer--column and TestOutput--column</code> 
+is used to contain the test markup (Look at TestTemplate.njk source code to see markup).
+{% endset %}
+{% call Test.componentColumn( 'TestContainer--column', when5, 'Test containers are rendered in columns regardless of viewport size.' ) %}
+<div class="u-flex">
+  <div class="TestBoxLeft">TestBoxLeft</div>
+  <div class="TestBox">TestBox</div>
+</div>
+{% endcall %}
+</body>
+
+</html>

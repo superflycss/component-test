@@ -1,0 +1,12 @@
+@import "@superflycss/variables-fonts";
+@import "@superflycss/variables-layout";
+
+:root {
+  --TestRender-margin-bottom: 2rem;
+  --TestRender-text-color: inherit;
+}
+
+.TestRender {
+  color: var(--TestRender-text-color);
+  margin-bottom: var(--TestRender-margin-bottom);
+}

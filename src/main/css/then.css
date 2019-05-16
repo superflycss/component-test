@@ -1,0 +1,22 @@
+@import "@superflycss/variables-fonts";
+@import "@superflycss/variables-layout";
+
+:root {
+  --TestThen-background-color: inherit;
+  --TestThen-text-color: inherit;
+  --TestThen-background-color: inherit;
+  --TestThen-text-color: inherit;
+  --TestThen-margin-bottom: 1rem;  
+}
+
+.TestThen {
+  @apply(--u-font-size-800);
+  @apply(--u-font-weight-500);
+  color: var(--TestThen-text-color);
+  background-color: var(--TestThen-background-color);
+  margin-bottom: var(--TestThen-margin-bottom);
+}
+
+.TestThen::before {
+  content: 'Then';
+}

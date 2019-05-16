@@ -1,0 +1,10 @@
+@import "@superflycss/variables-fonts";
+@import "@superflycss/variables-layout";
+
+:root {
+  --TestCode-text-color: inherit;  
+}
+
+.TestCode {
+  color: var(--TestCode-text-color);
+}
