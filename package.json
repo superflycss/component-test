@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/superflycss/component-test#readme",
   "dependencies": {
-    "@superflycss/variables-dimension": "^2.0.0",
+    "@superflycss/variables-dimension": "^2.0.2",
     "@superflycss/variables-fonts": "^3.0.0",
     "@superflycss/variables-layout": "^2.0.0"
   },
